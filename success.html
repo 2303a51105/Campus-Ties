@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Association - Success Story Tracking</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Alumni Association</div>
+        <div class="menu-toggle" id="menu-toggle">
+            <i class='bx bx-menu'></i>
+        </div>
+        <nav class="menu" id="menu">
+            <a href="index.html">Home</a>
+            <a href="profile.html">Profile</a>
+            <a href="messages.html">Messages</a>
+            <a href="notifications.html">Notifications</a>
+            <a href="settings.html">Settings</a>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="https://onedrive.live.com/embed?resid=771D3B3169BA2924%21713&authkey=%21ABYFdYMJDfuCvrI&width=800&height=800" alt="Profile Picture">
+                <h3>Harsh</h3>
+                <p>Class of 2027</p>
+            </div>
+            <nav class="menu">
+                <a href="registration.html"><i class='bx bxs-user-plus'></i> Alumni Registration</a>
+                <a href="donation.html"><i class='bx bxs-donate-heart'></i> Donation Portal</a>
+                <a href="networking.html"><i class='bx bxs-network-chart'></i> Networking Hub</a>
+                <a href="jobs.html"><i class='bx bxs-briefcase'></i> Job Portal</a>
+                <a href="directory.html"><i class='bx bxs-book-content'></i> Alumni Directory</a>
+                <a href="success.html" class="active"><i class='bx bxs-trophy'></i> Success Story Tracking</a>
+                <a href="events.html"><i class='bx bxs-calendar-event'></i> Events and Reunions</a>
+                <a href="feedback.html"><i class='bx bxs-chat'></i> Feedback and Surveys</a>
+            </nav>
+        </aside>
+
+        <section class="main-section">
+            <article class="card">
+                <h2>Success Story Tracking</h2>
+                <p>Share and track the success stories of our alumni community. Submit your achievements or read about others here.</p>
+            </article>
+
+            <!-- Success Stories Section -->
+            <section class="success-stories">
+                <div class="story-card">
+                    <div class="story-text">
+                        <p class="short-text">I recently had the opportunity to speak at a major tech conference where I shared insights on AI and machine learning...</p>
+                        <p class="full-text">I recently had the opportunity to speak at a major tech conference where I shared insights on AI and machine learning. It was an amazing experience to connect with industry leaders and share the stage with some of the best minds in the field.</p>
+                        <a href="#" class="read-more">Read more</a>
+                    </div>
+                    <img src="https://via.placeholder.com/300" alt="Success Story Image" class="story-image">
+                </div>
+
+                <div class="story-card">
+                    <div class="story-text">
+                        <p class="short-text">I was recently promoted to Senior Manager at my company after leading a successful project...</p>
+                        <p class="full-text">I was recently promoted to Senior Manager at my company after leading a successful project that brought in new clients and significantly increased revenue. I'm thrilled to take on this new role and continue growing in my career.</p>
+                        <a href="#" class="read-more">Read more</a>
+                    </div>
+                    <img src="https://via.placeholder.com/300" alt="Success Story Image" class="story-image">
+                </div>
+
+                <div class="story-card">
+                    <div class="story-text">
+                        <p class="short-text">I have been recognized as Employee of the Year at my organization for the third consecutive year...</p>
+                        <p class="full-text">I have been recognized as Employee of the Year at my organization for the third consecutive year. This achievement wouldn't have been possible without the support of my amazing team and the opportunities provided by my company to innovate and excel.</p>
+                        <a href="#" class="read-more">Read more</a>
+                    </div>
+                    <img src="https://via.placeholder.com/300" alt="Success Story Image" class="story-image">
+                </div>
+
+                <!-- Add more story cards as needed -->
+            </section>
+            <!-- End of Success Stories Section -->
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Alumni Association. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('menu').classList.toggle('active');
+        });
+
+        // Script to handle the "Read more" functionality
+        document.querySelectorAll('.read-more').forEach(function(button) {
+            button.addEventListener('click', function(event) {
+                event.preventDefault();
+                const fullText = this.previousElementSibling;
+                fullText.style.display = 'inline';
+                this.style.display = 'none';
+            });
+        });
+    </script>
+</body>
+</html>
